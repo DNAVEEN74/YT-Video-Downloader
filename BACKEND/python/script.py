@@ -6,8 +6,8 @@ def download_video(video_url):
     
     ydl_opts = {
         'format': 'mp4',
-        'noplaylist': True,  # Ensure only single video is downloaded
-        'outtmpl': '-',      # Output to stdout
+        'noplaylist': True,
+        'outtmpl': '-',
     }
     
     with ytdlp.YoutubeDL(ydl_opts) as ydl:
